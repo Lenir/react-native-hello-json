@@ -22,10 +22,11 @@ var apiUrl = 'http://swapi.co/api/';
 var URL = 'http://swapi.co/api/people/1';
 
 
+
 export default class InfoPage extends Component {
   constructor(props) {
        super(props);
-       this.state = {
+       this.state={
          pname:null,
          pheight:null,
          pmass:null,
