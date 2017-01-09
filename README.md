@@ -3,7 +3,7 @@ tutorial for api json call.
 
 dev env is window 7(64bit. I know, it's old and annoying in dev apps.), atom editor, android avd.
 
-리액트 네이티브 API 호출 연습용 프로젝트입니다. 
+리액트 네이티브 API 호출 연습용 프로젝트입니다.
 
 
 ## Used/referenced
@@ -20,14 +20,17 @@ dev env is window 7(64bit. I know, it's old and annoying in dev apps.), atom edi
 
 ## Note
 <p align="center">
-    <img src ="https://github.com/Lenir/react-native-hello-json/blob/master/starwarsAPI.png" />
-    looks like this. hmmmm..
+    <img src ="https://github.com/Lenir/react-native-hello-json/blob/master/starwarsAPI.png" width="300"/>
+    <img src ="https://github.com/Lenir/react-native-hello-json/blob/master/starwarsAPI2.png" width="300"/>
+
+
+</p>
+<p align="center">
+looks like this. hmmmm..
 </p>
 
 
 
 
 ## Issues
-I want 'fetchData' operates only when i clicked 'search' button, but it doesn't. it operates continuously. I'll find out why.
-
-원래는 버튼 클릭시에만 로딩되도록 하려 했는데 state가 바뀔 때 마다 그리고 안바뀌어도 계속 로딩되는데 이유를 모르겠네요.. 찾아봐야겠습니다.
+I want 'fetchData' operates only when i clicked 'search' button, but it doesn't. it operates continuously. I fixed this issue by correcting arrow function ( () =>). I do not wrote onPress function with arrow function, that causes issue. i fixed it.
