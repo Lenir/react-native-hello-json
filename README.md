@@ -3,7 +3,7 @@ tutorial for api json call.
 
 dev env is window 7(64bit. I know, it's old and annoying in dev apps.), atom editor, android avd.
 
-리액트 네이티브 API 호출 연습용 프로젝트입니다.
+리액트 네이티브 API 호출 연습용 프로젝트입니다. 
 
 
 ## Used/referenced
