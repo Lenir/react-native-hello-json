@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "597460774748",
+    "firebase_url": "https://ncinfapp.firebaseio.com",
+    "project_id": "ncinfapp",
+    "storage_bucket": "ncinfapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597460774748:android:7c9f0a6de11b0d7d",
+        "android_client_info": {
+          "package_name": "kr.co.ncin.NCInfApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597460774748-ms1gr8vlduhp3l1v2l56uapf8rdqp6bo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY-JzPx73a7Lk4wDN-xBAUNiFcgF9OYUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

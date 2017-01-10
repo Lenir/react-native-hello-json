@@ -34,6 +34,7 @@
 		98D0ACDEA596454D86468E56 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67F648CA5F1140C8B8C3905B /* Octicons.ttf */; };
 		A8F67B3566DC4979AFBF178D /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A6644A1F34C402CA2A6F37D /* SimpleLineIcons.ttf */; };
 		D8A9FC267B5848CD8DDDDBDE /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10C73CE008CC471FB97F8189 /* Zocial.ttf */; };
+		3DBFA3D389024103B453E687 /* libRNFIRMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C04D6C6753341CA9B3EEA30 /* libRNFIRMessaging.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +257,9 @@
 		67F648CA5F1140C8B8C3905B /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		2A6644A1F34C402CA2A6F37D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		10C73CE008CC471FB97F8189 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E6CC1DF0179E403EB5BE9FDA /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; name = "RNFirebase.xcodeproj"; path = "../node_modules/react-native-firebase/RNFirebase.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		E682D8A57E9745E28064E3F2 /* RNFIRMessaging.xcodeproj */ = {isa = PBXFileReference; name = "RNFIRMessaging.xcodeproj"; path = "../node_modules/react-native-fcm/ios/RNFIRMessaging.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		5C04D6C6753341CA9B3EEA30 /* libRNFIRMessaging.a */ = {isa = PBXFileReference; name = "libRNFIRMessaging.a"; path = "libRNFIRMessaging.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				4CC92F92A32D4909967B014C /* libRNVectorIcons.a in Frameworks */,
+				3DBFA3D389024103B453E687 /* libRNFIRMessaging.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +433,8 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				BE256F3247A74C679ACAF695 /* RNVectorIcons.xcodeproj */,
+				E6CC1DF0179E403EB5BE9FDA /* RNFirebase.xcodeproj */,
+				E682D8A57E9745E28064E3F2 /* RNFIRMessaging.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -881,6 +888,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -897,6 +905,7 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCInfApp.app/NCInfApp";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};

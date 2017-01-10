@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import {
   AppRegistry,
+  Animated,
   StyleSheet,
   Text,
   Button,
@@ -27,6 +28,18 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 export default class DetailInfo extends Component {
   constructor(props) {
        super(props);
+       this.state ={
+         namesize: new Animated.Value(10),
+       }
+   }
+   componentDidMount() {
+     Animated.timing(          // Uses easing functions
+       this.state.namesize,    // The value to drive
+       {toValue: 20}            // Configuration
+     ).start();                // Don't forget start!
+   }
+   componentWillUnmount() {
+     clearTimeout(this._timer);
    }
   render() {
     console.log("Props", this.props, this.state);
@@ -37,7 +50,7 @@ export default class DetailInfo extends Component {
         </View>
         <View style={{margin:5,alignItems:'center'}}>
           <Text style={{color:'#5e5e5e'}}>Name</Text>
-          <Text style={{color:'#aeaeae',fontWeight:'bold'}}>{this.props.name}</Text>
+          <Animated.Text style={{fontSize: this.state.namesize, color:'#aeaeae',fontWeight:'bold'}}>{this.props.name}</Animated.Text>
         </View>
 
         <View style={{margin:5,alignItems:'center'}}>
@@ -49,6 +62,9 @@ export default class DetailInfo extends Component {
           <Text style={{color:'#5e5e5e'}}>Mass</Text>
           <Text style={{color:'#aeaeae',fontWeight:'bold'}}>{this.props.mass}</Text>
         </View>
+        <TouchableOpacity onPress={()=>Actions.pop()}>
+          <Ionicons size={35} name="ios-arrow-round-back" color="#909090"/>
+        </TouchableOpacity>
       </View>
     );
   }
